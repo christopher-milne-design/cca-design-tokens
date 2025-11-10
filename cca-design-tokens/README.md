@@ -4,9 +4,12 @@ Design tokens for Token Studio (Figma). This folder contains all tokens synced w
 
 ## Files
 
-- **`tokens.json`** - Main Token Studio file with all color and existing tokens
-- **`typography-primitives.json`** - Base typography values (font families, weights, sizes for Desktop/Mobile)
-- **`typography-system.json`** - Semantic typography tokens (heading, body, label, code, link, input)
+- **`tokens.json`** - Single Token Studio file containing all design tokens:
+  - Colors (primitives and semantic)
+  - Spacing
+  - Border radius
+  - Typography primitives (font families, weights, Desktop/Mobile font sizes)
+  - Typography system (semantic tokens for heading, body, label, code, link, input)
 
 ## Typography System (UI Prep Structure)
 
@@ -40,9 +43,11 @@ All semantic tokens reference the primitives and support Desktop/Mobile modes:
 ## Using in Token Studio
 
 1. Open Token Studio plugin in Figma
-2. Go to Settings → Storage → Pull from GitHub
-3. Token Studio will load all three JSON files
-4. Set up Desktop/Mobile modes for responsive typography
+2. Go to Settings → Storage
+3. Ensure path is set to: `cca-design-tokens/tokens.json`
+4. Click "Pull from GitHub"
+5. Token Studio will load all tokens from the single file
+6. Set up Desktop/Mobile modes for responsive typography
 
 ## Using in Code
 
